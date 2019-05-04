@@ -5,6 +5,7 @@ import { MatModalsModule } from './modals/modals.module';
 import { MatParallaxModule } from './parallax/parallax.module';
 import { MatTooltipsModule } from './tooltips/tooltips.module';
 import { MatButtonModule } from './button/button.module';
+import { MatSelectModule } from './select/select.module';
 
 @NgModule({
   imports: [
@@ -13,6 +14,7 @@ import { MatButtonModule } from './button/button.module';
     MatModalsModule,
     MatParallaxModule,
     MatTooltipsModule,
+    MatSelectModule,
     MatButtonModule
   ],
   exports:[
@@ -20,6 +22,7 @@ import { MatButtonModule } from './button/button.module';
     MatModalsModule,
     MatParallaxModule,
     MatTooltipsModule,
+    MatSelectModule,
     MatButtonModule
   ]
 })

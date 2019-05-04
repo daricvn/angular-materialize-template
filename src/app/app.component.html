@@ -1,6 +1,10 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <app-header></app-header>
 <mat-button class="blue" floating><i class="material-icons">done</i></mat-button>
+<mat-select class="blue-text" [items]="data" item-text="text" item-value="id" width="300" [(ngModel)]="selectedValue"></mat-select>
+<br>
+{{ selectedValue }}
+<br>
 <router-outlet></router-outlet>
 
 <app-footer></app-footer>

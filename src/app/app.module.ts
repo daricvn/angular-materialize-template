@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { FooterComponent } from './section/footer/footer.component';
 import { HeaderComponent } from './section/header/header.component';
 import { MaterializeModule } from './materialize/materialize.module';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -15,6 +16,7 @@ import { MaterializeModule } from './materialize/materialize.module';
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     MaterializeModule,
     AppRoutingModule
   ],

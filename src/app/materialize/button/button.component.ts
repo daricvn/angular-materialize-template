@@ -3,7 +3,6 @@ import { Component, OnInit, Input, Output, EventEmitter, ViewChild, ElementRef, 
 @Component({
   selector: 'mat-button',
   templateUrl: './button.component.html',
-  styleUrls: ['./button.component.css'],
   encapsulation: ViewEncapsulation.None
 })
 export class ButtonComponent implements OnInit, OnChanges, AfterViewInit {
