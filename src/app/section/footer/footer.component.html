@@ -1,0 +1,27 @@
+<footer class="page-footer" [ngClass]="config.theme">
+  <div class="container">
+    <div class="row">
+      <div class="col l6 s12">
+        <h5 class="white-text" [innerText]="footer.title"></h5>
+        <p class="grey-text text-lighten-4" [innerHTML]="footer.description"></p>
+      </div>
+      <div class="col l4 offset-l2 s12">
+        <h5 class="white-text" [innerText]="footer.link"></h5>
+        <ul>
+          <li *ngFor="let link of footer.links" [ngStyle]="footer.liStyle">
+            <a [href]="link.url" class="grey-text text-lighten-3 icon-hover">
+              <i *ngIf="link.icon" style="font-size: 32px" [className]="link.icon" [innerHTML]="link.matIcon || ''"></i>
+              {{ link.text || ''}}
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-copyright">
+    <div class="container">
+    <span class="pl-2" [innerText]="footer.copyright"></span>
+    <!-- <a class="grey-text text-lighten-4 right" href="#!">More Links</a> -->
+    </div>
+  </div>
+</footer>
