@@ -1,0 +1,6 @@
+.icon-hover i{
+    transition: 0.3s all;
+}
+.icon-hover:hover i{
+    filter: invert(0.8);
+}
